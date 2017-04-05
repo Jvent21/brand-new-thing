@@ -1,0 +1,19 @@
+var slideimages1 = new Array();
+	slideimages1[0] = new Image();
+	slideimages1[0].src = "<%= asset_path("Placeholder1.jpg")%>";
+	slideimages1[1] = new Image();
+	slideimages1[1].src = "<%= asset_path("Placeholder2.png")%>";
+	slideimages1[2] = new Image();
+	slideimages1[2].src = "<%= asset_path("Placeholder3.png")%>";
+var step=0;
+function slideit1()
+{
+	if (!document.images)
+	return;
+	document.getElementById('slide1').src = slideimages1[step].src;
+	if (step<2)
+	step++;
+	else
+	step=0;
+	setTimeout("slideit1()",2500);
+}

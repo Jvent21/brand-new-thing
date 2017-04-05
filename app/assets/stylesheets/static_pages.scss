@@ -15,6 +15,11 @@ div
         font-size: 32px;
         color: white;
     }
+    p
+    {
+        color: white;
+        font-family: "Georgia";
+    }
 }
 
 button
@@ -45,7 +50,7 @@ body
     background-image: url("http://www.publicdomainpictures.net/pictures/110000/velka/chalkboard-or-blackboard.jpg");
     background-repeat: no-repeat;
 }
-header
+header, footer
 {
     border-radius: 8px;
     background-color: black;
@@ -62,6 +67,10 @@ header
 nav
 {
     padding-left: 600px;
+    p
+    {
+        color: white;
+    }
 }
 li
 {
